@@ -62,6 +62,8 @@ if file is not None:
 
             result_image = cv2.imdecode(np.frombuffer(result_image_bytes, dtype=np.uint8), cv2.IMREAD_UNCHANGED)
 
+            print(type(result_image))
+
             cv2.imwrite(file_name, result_image)
 
             with placeholder2:
